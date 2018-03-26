@@ -1,0 +1,147 @@
+/* 大平版電到1300px */
+/* Big tablet to 1200px (widths smaller that the 1140px row) */
+@media only screen and (max-width:1200px){
+	.hero-text-box{
+		width: 100%;
+		padding: 0 2%;
+	}
+	.row{ padding:0 2%;}
+
+	.long-copy{
+		width: 80%;
+		margin-left: 10%;
+	}
+
+}
+
+/* 橫向ipad */
+/* 小平版到大平版 */
+/* small tablet to tablet:from 768px to 1023px */
+@media only screen and (max-width:1023px){
+	/* 改變字體大小 */
+	body{ font-size: 18px; }
+	/* 在比較小的裝置上，要改較小的距離 */
+	section{ padding: 60px 0; }
+
+	.long-copy{
+		width: 80%;
+		margin-left: 10%;
+	}
+
+	.steps-box {margin-top: 10px;}
+	.steps-box:last-child{margin-top: 10px;}
+	/* 刪除上面的空白 */
+	.works-steps{margin-bottom: 40px;}
+	.works-step:last-of-type{margin-bottom: 60px;}
+	/* 由40%增加到50% */
+	.app-screen{width: 50%;}
+	/* 將圖標減小的設定 */
+	.icon-small{
+		width: 17px;
+		margin-right: 5px;
+	}
+
+	/* WE'RE CURRENTLY IN THESE CITIES內文字的大小
+	本來沒設定 */
+	.city-feature{font-size: 90%;}
+	/* 將START EATING HEALTHY TODAY三欄式的格式另外設定 */
+	.plan-box{
+		width: 100%;
+		margin-left: 0%;
+	}
+	/* START EATING HEALTHY TODAY價格的大小
+	本來是300% */
+	.plan-price{font-size: 250%;}
+
+	.contact-form{width: 80%;}
+}
+/* iPad的寬度是768px */
+/* Small phones to small tablets:from 481px to 767px */
+@media only screen and (max-width:767px){
+	/* 先到style.css增加body的部份 */
+	/* 減少更多body的字體大小 */
+	body{ font-size: 16px; }
+
+	/* 減少section之間的padding, 前面設60px，
+	現在在非常小的裝置上，所以設30px */
+	section{padding:30px 0;}
+
+	/* 減少row，.hero-text-box的padding，前面是2%,
+	頂部和底部設零 */
+	.row,
+	.hero-text-box{padding:0 4%;}
+	
+	/* .col由gird.css copoy過來 */
+	/* 將所有列的寬度定義為100%，意謂著列不再是排列放置，
+	而是堆疊在彼此的頂部 */
+	.col {
+		width: 100%;
+
+		/* 因為在grid.css中的.col設margin: 1% 0 1% 1.6%; 
+		我們不想要這樣，更改為下面這樣 */
+		margin: 0 0 4% 0;
+	}
+
+	/* 隱藏所有的導覽列，晚些再用jQuery設定 */
+	.main-nav{display: none;}
+
+	/* 一開始的大字標由240%縮小為180% */
+	h1 {font-size:  180%;}
+	/* 一開始的h2字標由180%縮小為150% */
+	h2 {font-size:  150%;}
+
+	/* GET FOOD FAST — NOT FAST FOOD.部份的內文介紹 */
+	.long-copy{
+		width: 100%;
+		margin-left: 0%;
+	}
+	/* 放手機圖的範圍設40%寬大小 */
+	.app-screen{width: 40%;}
+
+	/* 把手機圖放中間的調整 */
+	/* 放手機的steps-box設定置中 */
+	.steps-box:first-child{text-align: center;}
+	.works-step div{
+
+		height: 40px;
+		width: 40px;
+
+		margin-right: 15px;
+		padding: 4px;
+		/* 把手機圖放中間的調整 */
+		font-size: 120%;
+	}
+	.works-step{margin-bottom: 20px;}
+	.works-step:last-of-type{margin-bottom: 20px;}
+
+}
+/* 舊iphone的寬度，iPhone5,iPhone4 */
+/* small phones:from 0 to 480px */
+@media only screen and (max-width:480px){
+	section{	padding:25px 0;	}
+	.contact-form{	width: 100%;	}
+}
+
+
+
+/* 	.hero-text-box {
+	    width: 100%;
+	    padding: 20% 0 0 8%;
+	}
+	a.btn.btn-full {
+	    margin-bottom: 20px;
+	    width: 164px;
+	}
+	section{padding:50px 0;}
+
+	.contact-form{width: 100%;}
+
+	 數字距離調整 
+	.works-step div {
+	    line-height: 25px;
+	}
+
+	 按鈕要並排 
+	.btn-app img{
+		margin-right: 3px;
+	} */
