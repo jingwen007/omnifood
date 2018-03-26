@@ -141,7 +141,7 @@ a:active{
 
 .btn:link,
 .btn:visited,
-input[type="submit"] {	
+input[type=submit] {	
 	display: inline-block;
 	padding: 10px 30px;
 	font-weight: 300;
@@ -152,7 +152,7 @@ input[type="submit"] {
 
 .btn-full:link,
 .btn-full:visited,
-input[type="submit"] {
+input[type=submit] {
 	background-color: #e67e22;
 	border: 1px solid #e67e22;
 	color: #fff;
